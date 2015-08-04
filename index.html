@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>By the Moon</title>
+	<link rel="stylesheet" href="style.css">
+
+	<!-- ===FONTS=== -->
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
+
+	<!-- FAVICON -->
+	<link type="image/png" href="i/favicon.png" rel="icon">
+
+	<!-- MOBILE -->
+	<meta name="viewport"content="width=device-width, initial-scale=1.0">
+
+	<!-- ANIMATE CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.3.0/animate.css">
+</head>
+<body>
+		<section class="about">
+
+			<div class="wrapper clearfix">
+				<div class="intro">
+					<h1 class="animated slideInUp">By the Moon</h1>
+
+					<p class="animated slideInUp">The moon controls ocean tides, influences the groundwater tables beneath our feet and the movement of fluids in plants. Even continental land masses are said to rise 2 to 3 feet in elevation with the passage of the moon. Understanding the effects, and timing your gardening chores accordingly, is the basis of moon gardening.</p>
+
+
+				</div> <!-- end of intro -->
+
+				<div class="icon-container">
+					<a data-scroll href="#brilliance">
+					<img src="i/arrow-icon.svg" alt="arrow icon" class="animated fadeInUp">
+					</a>
+				</div> <!-- end of icon-container -->
+
+			</div> <!-- end of wrapper clearfix -->
+
+		</section> <!-- end of about -->
+
+		<!-- ======================================== -->
+		<!-- START OF FORM -->
+
+		<section class="main">
+			<div class="wrapper clearfix">
+
+				<div class="main-content" id="brilliance">
+					<h2>Enter Date</h2>
+
+					<form>
+						<input type="date" date="" class="inputDate" >
+
+						<div class="button-container">
+							<!-- <a data-scroll href="#bazinga"> -->
+								<button type="submit">Calculate
+							</button>
+							<!-- </a> -->
+						</div>
+
+					</form>
+				</div><!--  end of main-content -->
+			</div> <!-- end of wrapper clearfix -->
+			
+		</section> <!-- end of section:main -->
+
+		<!-- ======================================== -->
+		<!-- START OF RESULTS -->
+
+			
+		<section class="moon-phase hide" >
+
+			<div class="wrapper clearfix">
+
+				<div class="lunar-content clearfix">
+
+					<div class="date-month">
+						<div class="container">
+							<h3><!-- date --></h3>
+							<h2><!-- month --></h2>
+						</div> 
+
+						<div class="lunar-picture">
+							
+						</div>
+
+						<div class="lunar-specs">
+
+							<p class="age"></p>
+							<p class="light"></p>
+							<p class="stage"></p>
+						</div>
+					</div> <!-- end of date-month -->
+				</div><!-- end of day-picture-content -->
+
+				<div class="action">
+
+					<p class="fact"></p>
+					<p class="task"></p>
+				</div> <!-- end of action -->
+
+			</div> <!-- end of clearfix -->
+
+		</section> <!-- end of moon-phase hide -->
+
+		<section class="footer">
+			<div class="footer-wrapper clearfix"> <!-- id="bazinga" -->
+				<p class="crafted">Handcrafted by Joanne Ho</p>
+			</div>
+		</section>
+
+
+
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="date.js"></script>
+
+  <script src="app.js"></script>
+  <script src="smooth-scroll.js"></script>
+
+	
+</body>
+</html>

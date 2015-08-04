@@ -1,0 +1,28 @@
+// ==================
+// VARIABLES
+// PROJECT 5 - BY THE MOON - JOANNE HO
+// ==================
+
+
+
+@mixin wrapper(){
+	margin:0 auto;
+	width: 90%;
+	text-align:center;
+	padding:10%;
+}
+@mixin footerwrapper(){
+	margin:0 auto;
+	width:90%;
+	text-align:center;
+	padding:1% 10%;
+}
+@mixin header(){
+	font-family: 'Open Sans', sans-serif;
+	font-weight:300;
+}
+@mixin paragraph(){
+	line-height:2;
+	font-size:1rem;
+	padding:0 3rem;
+}
