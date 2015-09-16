@@ -7,6 +7,7 @@
 
 	<!-- ===FONTS=== -->
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Libre+Baskerville' rel='stylesheet' type='text/css'>
 
 	<!-- FAVICON -->
 	<link type="image/png" href="i/favicon.png" rel="icon">
@@ -14,53 +15,65 @@
 	<!-- MOBILE -->
 	<meta name="viewport"content="width=device-width, initial-scale=1.0">
 
-	<!-- ANIMATE CSS -->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.3.0/animate.css">
+
 </head>
 <body>
-		<section class="about">
+		<section class="header">
 
-			<div class="wrapper clearfix">
-				<div class="intro">
+			<div class="intro-wrapper">
+				
+					<h3>Farmer's Almanac</h3>
 					<h1 class="animated slideInUp">By the Moon</h1>
-
-					<p class="animated slideInUp">The moon controls ocean tides, influences the groundwater tables beneath our feet and the movement of fluids in plants. Even continental land masses are said to rise 2 to 3 feet in elevation with the passage of the moon. Understanding the effects, and timing your gardening chores accordingly, is the basis of moon gardening.</p>
-
-
-				</div> <!-- end of intro -->
-
-				<div class="icon-container">
-					<a data-scroll href="#brilliance">
-					<img src="i/arrow-icon.svg" alt="arrow icon" class="animated fadeInUp">
-					</a>
-				</div> <!-- end of icon-container -->
-
-			</div> <!-- end of wrapper clearfix -->
-
+			</div> <!-- end of intro-wrapper -->
 		</section> <!-- end of about -->
+		<section class="intro">
+			<div class="intro-wrapper">
+					
+				<div class="intro-pics">
+					<div class="splash-01"><img src="i/farm-night.jpg" alt="barn image"></div>
+					<div class="splash-02">
+						<img src="i/cloud-moon.jpg" alt="full moon image" class="cloud-moon"><!-- size:400px/130px -->
+						<div class="splash-02-1">
+							<img src="i/farm-view.jpg" alt="farm image"><!-- size:400px/255px -->
+						</div>
+						<div class="splash-02-2">
+							<img src="i/Prairie.jpg" alt="farm field image"><!-- size:400px/255px -->
+						</div>
+					</div><!--  end of splash-02 -->
+				</div> <!-- end of intro-pics -->
+				<div class="info-container">
+					<p class="intro-info">The moon controls ocean tides, influences the groundwater tables beneath our feet and the movement of fluids in plants. Even continental land masses are said to rise 2 to 3 feet in elevation with the passage of the moon. Understanding the effects, and timing your gardening chores accordingly, is the basis of moon gardening.</p>
+				</div>
+	
+			</div> <!-- end of intro-wrapper -->
+		</section> <!-- end of intro -->
+
+
+
 
 		<!-- ======================================== -->
 		<!-- START OF FORM -->
 
 		<section class="main">
-			<div class="wrapper clearfix">
+			<div class="intro-wrapper">
 
-				<div class="main-content" id="brilliance">
-					<h2>Enter Date</h2>
-
+				<div class="main-instruction" id="brilliance">					
+					<p>FORMAT: YYYY-MM-DD</p>
+					<h2 class="instruction-h2">Enter the Date</h2>
+				</div><!--  end of main-instruction -->
+				<div class="main-form">
 					<form>
-						<input type="date" date="" class="inputDate" >
-
+						<input type="date" date="" placeholder="" class="inputDate" >
 						<div class="button-container">
 							<!-- <a data-scroll href="#bazinga"> -->
 								<button type="submit">Calculate
 							</button>
 							<!-- </a> -->
 						</div>
-
 					</form>
-				</div><!--  end of main-content -->
-			</div> <!-- end of wrapper clearfix -->
+				</div> <!-- end of main-form -->
+
+			</div> <!-- end of intro-wrapper -->
 			
 		</section> <!-- end of section:main -->
 
@@ -70,42 +83,51 @@
 			
 		<section class="moon-phase hide" >
 
-			<div class="wrapper clearfix">
+			<div class="intro-wrapper">
+				<div class="moon-pics">
+					<div class="moon-01 lunar-picture"><img src="i/farm-night.jpg" alt="barn image"></div>
+					<div class="moon-02">
+						<img src="i/sunflower.jpg" alt="sunflower image">
+						<div class="moon-02-1 "><!-- date goes here --><!-- fancy moon month goes here--></div>
 
-				<div class="lunar-content clearfix">
+					</div><!--  end of moon-02 -->
+				</div> <!-- end of moon-pics -->
 
-					<div class="date-month">
-						<div class="container">
-							<h3><!-- date --></h3>
-							<h2><!-- month --></h2>
-						</div> 
-
-						<div class="lunar-picture">
-							
-						</div>
-
-						<div class="lunar-specs">
-
+				<div class="lunar-content">
+					<div class="lunar-specs">
+						<div class="spec-container 01">
+							<h4>Moon Age</h4>
 							<p class="age"></p>
-							<p class="light"></p>
+						</div>
+						<div class="spec-container 02">
+							<h4>Moon Stage</h4>
 							<p class="stage"></p>
 						</div>
-					</div> <!-- end of date-month -->
-				</div><!-- end of day-picture-content -->
+						<div class="spec-container 03">
+							<h4>Moon Light</h4>
+							<p class="light"></p>
+						</div>
+					</div>
+				</div><!-- end of lunar-content -->
 
-				<div class="action">
+				<div class="steps">
+					<div class="action-header"><h4>Lunar Status</h4></div> <!-- end of action-header -->
+					<div class="action-holder action1"><!-- <p class="fact" GOES HERE></p> --></div> <!-- end of action-holder -->
+					
+					<!-- <div class="action-header"><h4>Lunar Action</h4></div>  -->
+					<!-- end of action-header -->
+					<!-- <div class="action-holder action2"> -->
+					<!-- <p class="task" GOES HERE></p> -->
+					<!-- </div>  -->
+					<!-- end of action-holder -->					
+				</div> <!-- end of steps -->
 
-					<p class="fact"></p>
-					<p class="task"></p>
-				</div> <!-- end of action -->
-
-			</div> <!-- end of clearfix -->
-
+			</div> <!-- end of wrapper -->
 		</section> <!-- end of moon-phase hide -->
 
 		<section class="footer">
 			<div class="footer-wrapper clearfix"> <!-- id="bazinga" -->
-				<p class="crafted">Handcrafted by Joanne Ho</p>
+				<p class="crafted">&copy; Created by Joanne Ho using the <a href="http://www.burningsoul.in/">Burning Soul API</a></p>
 			</div>
 		</section>
 
@@ -118,6 +140,9 @@
 
   <script src="app.js"></script>
   <script src="smooth-scroll.js"></script>
+
+  <!-- ANIMATE CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.3.0/animate.css">
 
 	
 </body>

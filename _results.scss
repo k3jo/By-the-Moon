@@ -1,0 +1,102 @@
+// =======================
+// START OF MOON PHASE
+
+@import "bourbon";
+@import "neat";
+
+.moon-phase {
+	padding-top:3%;
+}
+.hide {
+	display:none;
+}
+// PICTURES
+.moon-pics {
+	@include outer-container(100%);//
+		@include media($mobile){
+			margin-bottom:5%;
+		}
+		.moon-01 {
+			@include span-columns(6);//
+			@include media($mobile) {
+			  @include span-columns(12);
+			}
+			img {
+				width: 100%;
+				height:auto;
+			}
+	}
+	.moon-02 {
+		@include span-columns(6);
+		height:100%;//
+		@include media($mobile) {
+		  @include span-columns(12);
+		}
+			img {
+			width: 100%;
+			height:auto;
+			margin-bottom:3%;
+			}
+		.moon-02-1 {			
+			height:auto;
+		}
+	}
+}
+
+.lunar-picture {
+	@include span-columns(6);
+	margin-bottom:20px;//
+	@include media($mobile) {
+	  @include span-columns(12);
+	}
+	img {
+		width:100%;
+	}
+}
+.lunar-content {
+	@include outer-container(100%);
+	@include reset-display;
+	.lunar-specs {
+		text-align:left;
+		font-family: 'Open Sans', sans-serif;
+		font-size:12px;
+		@include span-columns(4);
+		@include shift(6);//
+			@include media($mobile){
+				@include span-columns(6);
+				@include shift(6);
+		}
+		.spec-container {
+			border-top:2px solid white;
+		}
+	}
+}
+
+.steps {
+	@include outer-container(100%);
+	.action-header, .action-holder {
+		@include span-columns(5);//
+		// @include shift(1);
+			// @include media($mobile){
+			// 	@include span-columns(6);			
+			// }
+	}
+	.action-holder{
+		border-top:2px solid white;
+	}
+
+}
+
+.action1,
+.action2 {
+	font-family: 'Open Sans', sans-serif;
+	font-size:12px;
+	p {
+		text-align:left;
+	}
+}
+.fact,
+.task {
+	line-height:2;
+	text-align:left;
+}

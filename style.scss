@@ -5,227 +5,117 @@
 
 @import 'setup';
 @import 'variables';
+// BOURBON
+@import "bourbon";
+@import "neat";
+// 
+$mobile: new-breakpoint(max-width 480px);
+$mobile-tablet: new-breakpoint(max-width 520px);//
+$tablet: new-breakpoint(max-width 767px);
+$desktop: new-breakpoint(min-width 768px);
+
+
+@import 'intro';
+
+@import 'results';
+
+
 
 body {
-	background: rgb(0,139,139);
-	// background:url(i/nightsky.jpg);
-	// background-attachment: fixed;
-	// background-size: cover;
-	color:white;
+	background-size: cover;
+	background-color: lightgray;
+	// background-image: url('http://i195.photobucket.com/albums/z126/cakeplox/farm-night.jpg') no-repeat;
+	/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! *//* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! *//* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+	color:slategray;
 	font-family:sans-serif;
 	font-size:14px;
 }
+h1,
+h2, 
+h3,
+h4,
+h5,
+h6 {
+	margin:0;
+	padding:0;
+}
 h1{
-	margin-top:2rem;
+	margin-top:5rem;
 	font-size:72px;
 	@include header;
-	
+	text-align:left;//
+	@include media($tablet) {
+		font-size:58px;
+	}
+	@include media($mobile) {
+		margin-top:3rem;
+		font-size:38px;
+	}
 }
 h2 {
-	@include header;
+	margin-top:3rem;
 	font-size:72px;
-	// background: url(i/dark-clouds.jpg)
-	//   -webkit-background-clip: text
- //  -webkit-text-fill-color: rgba(255,255,255,0.25)
-
- // Wanted to do a clip background, but couldn't do it, why??
+	@include header;
+	text-align:left;
+	color:slategray;//
+		@include media($tablet) {
+			font-size:38px;
+		}
+		@include media($mobile) {
+		font-size:38px;
+		}
+	}
+h3 {
+	@include header;
+	text-align:left;
+	font-size:28px;//
+	@include media($tablet) {
+		font-size:24px;
+	}
+	@include media($mobile) {
+		font-size:18px;
+	}
+}
+h4 {
+	@include header;
+	font-size:26px;
+	margin:1rem 0;
 }
 .wrapper {
 	@include wrapper;
 }
-.about {
-	background:url(i/farm-night.jpg);
-	background-attachment: fixed;
-	background-size: cover;
-	height:100vh;
-}
-
-.intro {
-	border:5px double white;
-	margin-bottom:5rem;
-}
-.about p {
-	@include paragraph;
-	padding-bottom:2rem;
-}
-.main {
-	background: black;
-}
-.main-content {
-	text-align:center;
-}
-.icon-container img{
-	width: 10rem;
+.header {
+	background: white;
+	overflow:hidden;
 }
 
 
-// ===============
-// DATE PICKER SECTION
-
-input[type=date] {
-  height: 50px;
-  margin: 0 auto;
-  width: 50%;
-  font-family: arial, sans-serif;
-  font-size: 18px;
-  font-weight: bold;
-  text-transform: uppercase;
-  text-align:center;
-  background-color:transparent;
-  outline: none;
-  border: 0;
-  border-bottom:5px solid white;
-  border-radius: 3px;
-  padding: 0 3px;
-  color: #fff;
-  
-  &::-webkit-datetime-edit-month-field {
-    color: white;
-  }
-  &::-webkit-datetime-edit-day-field {
-    color: white;
-  }
-  &::-webkit-datetime-edit-year-field {
-    color: white;
-  }
-  
-  &::-webkit-clear-button {
-    font-size: 18px;
-    height: 30px;
-    position: relative;
-    right: 5px;
-    margin-right: 4px;
-  }
-  &::-webkit-inner-spin-button {
-    height: 30px;
-  }
-  &::-webkit-calendar-picker-indicator {
-    font-size: 18px;
-    
-        
-    &:hover {
-      background-color: lighten(#2f2f2f,40%);
-      color: darken(#fff, 10%);
-      cursor: pointer;
-    }
-    &:active {
-      color: blue;
-    }
-  }
-}
-input[type=date]:hover {
-	border-bottom:5px solid slategray;
-	transition:1s;
-}
-.button-container {
-	text-align:center;
-	margin:0 auto;
-}
-button {
-	display:inline-block;
-	margin:0 auto;
-	background: silver;
-	margin:2rem;
-	padding:10px 20px;
-}
-button:hover {
-	background: slategray;
-	transition:1s;
-	border:none;
-	padding:10px 20px;
-	color:white;
-}
 
 
-// =======================
-// START OF MOON PHASE
-.hide {
-	display:none;
-}
-
-.container {
-	width: 40%;
-	float:left;
-}
-.lunar-picture {
-	width: 60%;
-	float:left;
-	margin-bottom:20px;
-	img {
-		max-width:500px;
-	}
-}
-.lunar-specs {
-	clear:both;
-	border-top:1px solid white;
-	border-bottom:1px solid white;
-	text-align:left;
-	padding-left:15%;
-}
-.action {
-	background: url(i/dark-clouds.jpg);
-	padding:50px 10%;
-	margin-top:50px;
-}
-.fact,
-.task {
-	line-height:2;
-}
 // ========================
 // FOOTER
 .footer-wrapper {
 	@include footerwrapper;
 }
 .footer {
-	background:url(i/dark-clouds.jpg);
-	background-attachment: fixed;
-	background-size: cover;
+	background:black;
+	// background:url(i/dark-clouds.jpg);
+	// background-attachment: fixed;
+	// background-size: cover;
 	p {
 		@include header;
 		font-size:12px;
 		margin:0;
-		color:darkslategray;
-	}
-}
-// ========================
-// MOBILE
-@media (max-width: 1071px) {
-	h2 {
-		font-size:50px;
-	}
-	.lunar-picture img {
-		max-width:430px;
-	}
-
-}
-@media(max-width: 950px){
-	.lunar-picture img {
-		max-width:350px;
-	}
-}
-@media (max-width:740px){
-	h2 {
-		font-size:30px;
-	}
-	
-}
-@media (max-width:650px){
-}
-
-@media(max-width:400px){
-	.container {
-		width: 100%;
-		float:none;
-	}
-	.lunar-picture {
-		width: 100%;
-		float:none;
-		img {
-			max-width:500px;
+		color:dimgray;
+		a {
+			// text-decoration:none;
+			color: dimgray;
 		}
 	}
 }
+// ========================
 
+@import 'date-picker';
 
 
 

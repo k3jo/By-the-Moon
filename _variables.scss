@@ -4,14 +4,16 @@
 // ==================
 
 
+$lightgray: rgb(211,211,211);
+$smokygray: rgb(58,58,68);
 
 @mixin wrapper(){
 	margin:0 auto;
 	width: 90%;
 	text-align:center;
-	padding:10%;
+	// padding:10%;
 }
-@mixin footerwrapper(){
+@mixin footerwrapper{
 	margin:0 auto;
 	width:90%;
 	text-align:center;
@@ -21,8 +23,9 @@
 	font-family: 'Open Sans', sans-serif;
 	font-weight:300;
 }
-@mixin paragraph(){
+@mixin paragraph {
 	line-height:2;
 	font-size:1rem;
-	padding:0 3rem;
+	font-family: 'Open Sans', sans-serif;
+	font-weight:300;
 }

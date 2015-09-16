@@ -1,3 +1,5 @@
+// APP.JS
+
 var app = {};
 app.url = "http://api.burningsoul.in/moon";
 
@@ -224,13 +226,14 @@ app.displayMoonInfo = function(){
 	console.log(app.age);
 	console.log(app.fancyMoon);
 	console.log(app.month);
+
 	var $dateHolder = $('<h3>');
 	$dateHolder.append(app.date);
-	$('.container').append($dateHolder);
+	$('.moon-02-1').append($dateHolder);
 
 	var $monthHolder = $('<h2>');
 	$monthHolder.append(app.fancyMoon);
-	$('.container').append($monthHolder);
+	$('.moon-02-1').append($monthHolder);
 
 	var $moonPicture = $('<img>');
 	$moonPicture.attr('src',app.profilepic[app.photo]);
@@ -240,15 +243,17 @@ app.displayMoonInfo = function(){
 
 	var $ageHolder = $('<p>');
 	$ageHolder.append(app.age);
-	$('.lunar-specs').append($ageHolder);
-
-	var $lightHolder = $('<p>');
-	$lightHolder.append(app.light);
-	$('.lunar-specs').append($lightHolder);
+	$('.01').append($ageHolder);
 
 	var $stageHolder = $('<p>');
 	$stageHolder.append(app.stage);
-	$('.lunar-specs').append($stageHolder);
+	$('.02').append($stageHolder);
+
+	var $lightHolder = $('<p>');
+	$lightHolder.append(app.light);
+	$('.03').append($lightHolder);
+
+
 
 	// console.log("whoooo");
 	console.log("asdkflk");
@@ -275,7 +280,7 @@ app.task = [
 ,
 "These conditions are ideal for root plants including carrots, potatoes, radishes, onions and beets. According to a study done by Dr. Lili Kolisko in Germany in 1939, the success rate of seed germination increases a few days before a full moon. Gardening folklore also suggests that pruning is best done during a full moon because it encourages root growth."
 ,
-"This is the ideal time to let the garden rest and to weed,ted to shrubs, mow and kill pests."
+"This is the ideal time to let the garden rest and to weed, tend to shrubs, mow and kill pests."
 ];
 
 app.profilepic = [
@@ -299,19 +304,16 @@ app.displayAction = function(){
 
 	var $factHolder = $('<p>');
 	$factHolder.append(app.fact[app.phase]);
-	$('.action').append($factHolder);
+	$('.action1').append($factHolder);
 	// console.log($factHolder);
 
 	var $taskHolder = $('<p>');
 	$taskHolder.append(app.task[app.job]);
-	$('.action').append($taskHolder);
+	$('.action2').append($taskHolder);
 
 	app.displayEverything();
 	console.log("I am here");
 };
-
-
-
 
 
 

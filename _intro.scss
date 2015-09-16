@@ -1,0 +1,78 @@
+// INTRO SECTION
+
+@import "bourbon";
+@import "neat";
+@import "variables";
+
+$mobile: new-breakpoint(max-width 480px);
+$mobile-tablet: new-breakpoint(max-width 520px);//
+$tablet: new-breakpoint(max-width 767px);
+$desktop: new-breakpoint(min-width 768px);
+
+.intro {
+	background: $smokygray;
+	padding:3% 0;
+}
+.intro-wrapper {
+	margin:0 auto;
+	width: 97%;
+	@include outer-container(100%);
+	@include media($mobile){
+		width: 94%;
+	}
+}
+
+.intro-pics {
+	@include omega;
+	@include outer-container(100%);
+		.splash-01 {
+			@include span-columns(6);//
+
+			@include media($mobile) {
+				@include span-columns(12);
+				margin-bottom:1%;
+			}
+			img {
+				width: 100%;
+				height:auto;
+			}
+	}
+	.splash-02 {
+		@include span-columns(6);
+		height:100%;//
+		@include media($mobile) {
+		  @include span-columns(12);
+		}
+			img {
+			width: 100%;
+			height:auto;
+			margin-bottom:3%;
+			}
+		.splash-02-1,
+		.splash-02-2 {			
+			@include span-columns(3 of 6);
+			height:auto;
+		}
+	}
+}
+.cloud-moon {
+	@include media($mobile){
+		display:none;
+	}
+}
+.info-container {
+	@include outer-container(100%);
+}
+.intro-info {
+	@include paragraph;
+	@include span-columns(6);
+	@include shift(6);
+	font-size: 1.1rem;
+	line-height:1.5;
+	border-top:3px solid slategray;
+	padding-top:3%;//
+	@include media($tablet){
+		@include span-columns(10);
+		@include shift(2);
+	}
+}

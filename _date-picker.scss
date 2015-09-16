@@ -1,0 +1,122 @@
+// START OF OTHER SECTION
+.main {
+	background: black;
+  overflow:hidden;
+  padding:3% 0 3% 0%;
+}
+.main-instruction,
+.main-form {
+  @include span-columns(6);//
+      @include media($mobile) {
+      @include span-columns(12);
+      }
+}
+.instruction-h2 h2 {
+  margin-top:2rem;
+  @include media($tablet) {
+    font-size:38px;
+  }
+  @include media($mobile) {
+  font-size:38px;
+  }
+}
+.main-form {
+  padding-top:135px;//
+      @include media($tablet) {
+      padding-top:75px;
+    }
+}
+.main-instruction p{
+  @include header;
+  font-size:18px;
+  padding-left:1%;//
+  @include media($mobile) {
+  font-size:18px;
+  }
+}
+
+
+
+
+// ===============
+// DATE PICKER SECTION
+
+input[type=date] {
+  height: 50px;
+  margin: 0 auto;
+  width: 50%;
+  font-family: arial, sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align:center;
+  background-color:transparent;
+  outline: none;
+  border: 0;
+  border-bottom:3px solid slategray;
+  // border-radius: 3px;
+  padding: 0 3px 0 7%;
+  color: transparent;
+  
+  &::-webkit-datetime-edit-month-field {
+    color: transparent;
+  }
+  &::-webkit-datetime-edit-day-field {
+    color: transparent;
+  }
+  &::-webkit-datetime-edit-year-field {
+    color: transparent;
+  }
+  
+  &::-webkit-clear-button {
+    font-size: 18px;
+    height: 30px;
+    position: relative;
+    right: 5px;
+    margin-right: 4px;
+  }
+  &::-webkit-inner-spin-button {
+    height: 30px;
+  }
+  &::-webkit-calendar-picker-indicator {
+    font-size: 18px;
+    // 
+        
+    &:hover {
+      background-color: lighten(#2f2f2f,40%);
+      color:white;
+      cursor: pointer;
+    }
+    &:active {
+      color: blue;
+    }
+  }
+  @include media($tablet) {
+    width: 80%;
+  }
+}
+input[type=date]:hover {
+	border-bottom:3px solid white;
+	transition:1s;
+}
+.button-container {
+  margin-top:10%;
+  text-align:center;
+}
+button {
+	display:block;
+	color:slategray;
+	padding:5px 15px;
+	border:2px solid slategray;
+	background:transparent;
+	font-family: 'Open Sans', sans-serif;
+	text-transform:uppercase;
+
+}
+button:hover {
+	background: black;
+	transition:1s;
+	border:none;
+	color:white;
+	border:2px solid white;
+}
