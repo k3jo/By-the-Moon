@@ -328,5 +328,5 @@ app.init = function(){
 
 $(function(){
   app.init();
-  smoothScroll.init();
+  // smoothScroll.init();
 });

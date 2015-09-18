@@ -14,18 +14,13 @@ $mobile-tablet: new-breakpoint(max-width 520px);//
 $tablet: new-breakpoint(max-width 767px);
 $desktop: new-breakpoint(min-width 768px);
 
-
 @import 'intro';
-
+@import 'date-picker';
 @import 'results';
-
-
 
 body {
 	background-size: cover;
 	background-color: lightgray;
-	// background-image: url('http://i195.photobucket.com/albums/z126/cakeplox/farm-night.jpg') no-repeat;
-	/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! *//* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! *//* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
 	color:slategray;
 	font-family:sans-serif;
 	font-size:14px;
@@ -99,9 +94,6 @@ h4 {
 }
 .footer {
 	background:black;
-	// background:url(i/dark-clouds.jpg);
-	// background-attachment: fixed;
-	// background-size: cover;
 	p {
 		@include header;
 		font-size:12px;

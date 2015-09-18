@@ -74,8 +74,12 @@
 
 .steps {
 	@include outer-container(100%);
-	.action-header, .action-holder {
-		@include span-columns(5);//
+	.action-header {
+		@include span-columns(2);
+		@include shift(4);
+	}
+	.action-holder {
+		@include span-columns(6);//
 		// @include shift(1);
 			// @include media($mobile){
 			// 	@include span-columns(6);			

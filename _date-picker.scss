@@ -1,13 +1,26 @@
 // START OF OTHER SECTION
+
+@import "bourbon";
+@import "neat";
+@import "variables";
+
+$mobile: new-breakpoint(max-width 480px);
+$mobile-tablet: new-breakpoint(max-width 520px);//
+$tablet: new-breakpoint(max-width 767px);
+$desktop: new-breakpoint(min-width 768px);
+
 .main {
 	background: black;
   overflow:hidden;
   padding:3% 0 3% 0%;
+    @include media($mobile){
+      padding:3% 0 10% 0%;
+    }
 }
 .main-instruction,
 .main-form {
   @include span-columns(6);//
-      @include media($mobile) {
+      @include media($mobile){
       @include span-columns(12);
       }
 }
@@ -24,6 +37,9 @@
   padding-top:135px;//
       @include media($tablet) {
       padding-top:75px;
+      @include media($mobile) {
+        text-align:center;
+      }
     }
 }
 .main-instruction p{
@@ -34,8 +50,6 @@
   font-size:18px;
   }
 }
-
-
 
 
 // ===============
@@ -56,16 +70,16 @@ input[type=date] {
   border-bottom:3px solid slategray;
   // border-radius: 3px;
   padding: 0 3px 0 7%;
-  color: transparent;
+  color: slategray;
   
   &::-webkit-datetime-edit-month-field {
-    color: transparent;
+    color: slategray;
   }
   &::-webkit-datetime-edit-day-field {
-    color: transparent;
+    color: slategray;
   }
   &::-webkit-datetime-edit-year-field {
-    color: transparent;
+    color: slategray;
   }
   
   &::-webkit-clear-button {
@@ -111,6 +125,9 @@ button {
 	background:transparent;
 	font-family: 'Open Sans', sans-serif;
 	text-transform:uppercase;
+  @include media($mobile){
+    margin:0 auto;
+  }
 
 }
 button:hover {

@@ -353,6 +353,197 @@ html {
   box-sizing: inherit;
 }
 
+.main {
+  background: black;
+  overflow: hidden;
+  padding: 3% 0 3% 0%;
+}
+
+@media screen and (max-width: 480px) {
+  .main {
+    padding: 3% 0 10% 0%;
+  }
+}
+
+.main-instruction,
+.main-form {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 48.82117%;
+}
+
+.main-instruction:last-child,
+.main-form:last-child {
+  margin-right: 0;
+}
+
+@media screen and (max-width: 480px) {
+  .main-instruction,
+  .main-form {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%;
+  }
+  .main-instruction:last-child,
+  .main-form:last-child {
+    margin-right: 0;
+  }
+}
+
+.instruction-h2 h2 {
+  margin-top: 2rem;
+}
+
+@media screen and (max-width: 767px) {
+  .instruction-h2 h2 {
+    font-size: 38px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .instruction-h2 h2 {
+    font-size: 38px;
+  }
+}
+
+.main-form {
+  padding-top: 135px;
+}
+
+@media screen and (max-width: 767px) {
+  .main-form {
+    padding-top: 75px;
+  }
+}
+
+@media screen and (max-width: 767px) and (max-width: 480px) {
+  .main-form {
+    text-align: center;
+  }
+}
+
+.main-instruction p {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  padding-left: 1%;
+}
+
+@media screen and (max-width: 480px) {
+  .main-instruction p {
+    font-size: 18px;
+  }
+}
+
+input[type=date] {
+  height: 50px;
+  margin: 0 auto;
+  width: 50%;
+  font-family: arial, sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: transparent;
+  outline: none;
+  border: 0;
+  border-bottom: 3px solid slategray;
+  padding: 0 3px 0 7%;
+  color: slategray;
+}
+
+input[type=date]::-webkit-datetime-edit-month-field {
+  color: slategray;
+}
+
+input[type=date]::-webkit-datetime-edit-day-field {
+  color: slategray;
+}
+
+input[type=date]::-webkit-datetime-edit-year-field {
+  color: slategray;
+}
+
+input[type=date]::-webkit-clear-button {
+  font-size: 18px;
+  height: 30px;
+  position: relative;
+  right: 5px;
+  margin-right: 4px;
+}
+
+input[type=date]::-webkit-inner-spin-button {
+  height: 30px;
+}
+
+input[type=date]::-webkit-calendar-picker-indicator {
+  font-size: 18px;
+}
+
+input[type=date]::-webkit-calendar-picker-indicator:hover {
+  background-color: #959595;
+  color: white;
+  cursor: pointer;
+}
+
+input[type=date]::-webkit-calendar-picker-indicator:active {
+  color: blue;
+}
+
+@media screen and (max-width: 767px) {
+  input[type=date] {
+    width: 80%;
+  }
+}
+
+input[type=date]:hover {
+  border-bottom: 3px solid white;
+  -webkit-transition: 1s;
+          transition: 1s;
+}
+
+.button-container {
+  margin-top: 10%;
+  text-align: center;
+}
+
+button {
+  display: block;
+  color: slategray;
+  padding: 5px 15px;
+  border: 2px solid slategray;
+  background: transparent;
+  font-family: 'Open Sans', sans-serif;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 480px) {
+  button {
+    margin: 0 auto;
+  }
+}
+
+button:hover {
+  background: black;
+  -webkit-transition: 1s;
+          transition: 1s;
+  border: none;
+  color: white;
+  border: 2px solid white;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
 .moon-phase {
   padding-top: 3%;
 }
@@ -525,14 +716,26 @@ html {
   display: table;
 }
 
-.steps .action-header, .steps .action-holder {
+.steps .action-header {
   float: left;
   display: block;
   margin-right: 2.35765%;
-  width: 40.29137%;
+  width: 14.70196%;
+  margin-left: 34.11922%;
 }
 
-.steps .action-header:last-child, .steps .action-holder:last-child {
+.steps .action-header:last-child {
+  margin-right: 0;
+}
+
+.steps .action-holder {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 48.82117%;
+}
+
+.steps .action-holder:last-child {
   margin-right: 0;
 }
 
@@ -560,9 +763,6 @@ html {
 body {
   background-size: cover;
   background-color: lightgray;
-  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
-  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
-  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
   color: slategray;
   font-family: sans-serif;
   font-size: 14px;
@@ -680,10 +880,26 @@ h4 {
   color: dimgray;
 }
 
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
 .main {
   background: black;
   overflow: hidden;
   padding: 3% 0 3% 0%;
+}
+
+@media screen and (max-width: 480px) {
+  .main {
+    padding: 3% 0 10% 0%;
+  }
 }
 
 .main-instruction,
@@ -739,6 +955,12 @@ h4 {
   }
 }
 
+@media screen and (max-width: 767px) and (max-width: 480px) {
+  .main-form {
+    text-align: center;
+  }
+}
+
 .main-instruction p {
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
@@ -766,19 +988,19 @@ input[type=date] {
   border: 0;
   border-bottom: 3px solid slategray;
   padding: 0 3px 0 7%;
-  color: transparent;
+  color: slategray;
 }
 
 input[type=date]::-webkit-datetime-edit-month-field {
-  color: transparent;
+  color: slategray;
 }
 
 input[type=date]::-webkit-datetime-edit-day-field {
-  color: transparent;
+  color: slategray;
 }
 
 input[type=date]::-webkit-datetime-edit-year-field {
-  color: transparent;
+  color: slategray;
 }
 
 input[type=date]::-webkit-clear-button {
@@ -832,6 +1054,12 @@ button {
   background: transparent;
   font-family: 'Open Sans', sans-serif;
   text-transform: uppercase;
+}
+
+@media screen and (max-width: 480px) {
+  button {
+    margin: 0 auto;
+  }
 }
 
 button:hover {
