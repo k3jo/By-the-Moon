@@ -83,10 +83,12 @@ $desktop: new-breakpoint(min-width 768px);
 	@include outer-container(100%);
 	.action-header {
 		@include span-columns(2);
-		@include shift(4);
+		@include shift(6);
+
 	}
 	.action-holder {
 		@include span-columns(6);//
+		@include shift(6);
 		// @include shift(1);
 			// @include media($mobile){
 			// 	@include span-columns(6);			
