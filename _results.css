@@ -10,6 +10,7 @@ html {
 
 .moon-phase {
   padding-top: 3%;
+  background: #3a3a44;
 }
 
 .hide {
@@ -28,6 +29,12 @@ html {
   display: table;
 }
 
+@media screen and (max-width: 480px) {
+  .moon-pics {
+    margin-bottom: 5%;
+  }
+}
+
 .moon-pics .moon-01 {
   float: left;
   display: block;
@@ -37,6 +44,18 @@ html {
 
 .moon-pics .moon-01:last-child {
   margin-right: 0;
+}
+
+@media screen and (max-width: 480px) {
+  .moon-pics .moon-01 {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%;
+  }
+  .moon-pics .moon-01:last-child {
+    margin-right: 0;
+  }
 }
 
 .moon-pics .moon-01 img {
@@ -54,6 +73,18 @@ html {
 
 .moon-pics .moon-02:last-child {
   margin-right: 0;
+}
+
+@media screen and (max-width: 480px) {
+  .moon-pics .moon-02 {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%;
+  }
+  .moon-pics .moon-02:last-child {
+    margin-right: 0;
+  }
 }
 
 .moon-pics .moon-02 img {
@@ -76,6 +107,18 @@ html {
 
 .lunar-picture:last-child {
   margin-right: 0;
+}
+
+@media screen and (max-width: 480px) {
+  .lunar-picture {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%;
+  }
+  .lunar-picture:last-child {
+    margin-right: 0;
+  }
 }
 
 .lunar-picture img {
@@ -102,14 +145,28 @@ html {
   display: block;
   margin-right: 2.35765%;
   width: 31.76157%;
+  margin-left: 51.17883%;
 }
 
 .lunar-content .lunar-specs:last-child {
   margin-right: 0;
 }
 
+@media screen and (max-width: 480px) {
+  .lunar-content .lunar-specs {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 48.82117%;
+    margin-left: 51.17883%;
+  }
+  .lunar-content .lunar-specs:last-child {
+    margin-right: 0;
+  }
+}
+
 .lunar-content .lunar-specs .spec-container {
-  border-top: 2px solid white;
+  border-top: 2px solid slategray;
 }
 
 .steps {
@@ -124,19 +181,31 @@ html {
   display: table;
 }
 
-.steps .action-header, .steps .action-holder {
+.steps .action-header {
   float: left;
   display: block;
   margin-right: 2.35765%;
-  width: 40.29137%;
+  width: 14.70196%;
+  margin-left: 34.11922%;
 }
 
-.steps .action-header:last-child, .steps .action-holder:last-child {
+.steps .action-header:last-child {
   margin-right: 0;
 }
 
 .steps .action-holder {
-  border-top: 2px solid white;
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 48.82117%;
+}
+
+.steps .action-holder:last-child {
+  margin-right: 0;
+}
+
+.steps .action-holder {
+  border-top: 2px solid slategray;
 }
 
 .action1,

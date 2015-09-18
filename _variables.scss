@@ -15,9 +15,9 @@ $smokygray: rgb(58,58,68);
 }
 @mixin footerwrapper{
 	margin:0 auto;
-	width:90%;
-	text-align:center;
-	padding:1% 10%;
+	// width:90%;
+	text-align:left;
+	padding:3% ;
 }
 @mixin header(){
 	font-family: 'Open Sans', sans-serif;

@@ -3,9 +3,16 @@
 
 @import "bourbon";
 @import "neat";
+@import "variables";
+
+$mobile: new-breakpoint(max-width 480px);
+$mobile-tablet: new-breakpoint(max-width 520px);//
+$tablet: new-breakpoint(max-width 767px);
+$desktop: new-breakpoint(min-width 768px);
 
 .moon-phase {
 	padding-top:3%;
+	background: $smokygray;
 }
 .hide {
 	display:none;
@@ -67,7 +74,7 @@
 				@include shift(6);
 		}
 		.spec-container {
-			border-top:2px solid white;
+			border-top:2px solid slategray;
 		}
 	}
 }
@@ -86,7 +93,7 @@
 			// }
 	}
 	.action-holder{
-		border-top:2px solid white;
+		border-top:2px solid slategray;
 	}
 
 }
