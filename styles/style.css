@@ -300,37 +300,40 @@ html {
   display: table;
 }
 
-.intro-info {
-  line-height: 2;
-  font-size: 1rem;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 300;
+.info-container .intro-holder {
+  border-top: 3px solid slategray;
   float: left;
   display: block;
   margin-right: 2.35765%;
   width: 48.82117%;
   margin-left: 51.17883%;
-  font-size: 1.1rem;
-  line-height: 1.5;
-  border-top: 3px solid slategray;
-  padding-top: 3%;
 }
 
-.intro-info:last-child {
+.info-container .intro-holder:last-child {
   margin-right: 0;
 }
 
 @media screen and (max-width: 767px) {
-  .intro-info {
+  .info-container .intro-holder {
     float: left;
     display: block;
     margin-right: 2.35765%;
     width: 82.94039%;
     margin-left: 17.05961%;
   }
-  .intro-info:last-child {
+  .info-container .intro-holder:last-child {
     margin-right: 0;
   }
+}
+
+.info-container .intro-info {
+  line-height: 2;
+  font-size: 1rem;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-size: 1.1rem;
+  line-height: 1.5;
+  padding-top: 3%;
 }
 
 .main {

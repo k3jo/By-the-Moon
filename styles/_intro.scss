@@ -62,17 +62,19 @@
 }
 .info-container {
 	@include outer-container(100%);
-}
-.intro-info {
-	@include paragraph;
-	@include span-columns(6);
-	@include shift(6);
-	font-size: 1.1rem;
-	line-height:1.5;
-	border-top:3px solid slategray;
-	padding-top:3%;//
+	.intro-holder {
+		border-top:3px solid slategray;
+		@include span-columns(6);
+		@include shift(6);//
 	@include media($tablet){
 		@include span-columns(10);
 		@include shift(2);
+	}
+}
+.intro-info {
+	@include paragraph;	
+	font-size: 1.1rem;
+	line-height:1.5;
+	padding-top:3%;
 	}
 }
