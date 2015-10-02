@@ -1,13 +1,13 @@
 // START OF OTHER SECTION
 
-@import "bourbon";
-@import "neat";
-@import "variables";
+// @import "bourbon";
+// @import "neat";
+// @import "variables";
 
-$mobile: new-breakpoint(max-width 480px);
-$mobile-tablet: new-breakpoint(max-width 520px);//
-$tablet: new-breakpoint(max-width 767px);
-$desktop: new-breakpoint(min-width 768px);
+// $mobile: new-breakpoint(max-width 480px);
+// $mobile-tablet: new-breakpoint(max-width 520px);//
+// $tablet: new-breakpoint(max-width 767px);
+// $desktop: new-breakpoint(min-width 768px);
 
 .main {
 	background: black;

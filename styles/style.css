@@ -171,16 +171,6 @@ html {
   box-sizing: inherit;
 }
 
-html {
-  box-sizing: border-box;
-}
-
-*,
-*::after,
-*::before {
-  box-sizing: inherit;
-}
-
 .intro {
   background: #3a3a44;
   padding: 3% 0;
@@ -341,16 +331,6 @@ html {
   .intro-info:last-child {
     margin-right: 0;
   }
-}
-
-html {
-  box-sizing: border-box;
-}
-
-*,
-*::after,
-*::before {
-  box-sizing: inherit;
 }
 
 .main {
@@ -532,16 +512,6 @@ button:hover {
   border: none;
   color: white;
   border: 2px solid white;
-}
-
-html {
-  box-sizing: border-box;
-}
-
-*,
-*::after,
-*::before {
-  box-sizing: inherit;
 }
 
 .moon-phase {
@@ -880,16 +850,6 @@ h4 {
 
 .footer p a {
   color: dimgray;
-}
-
-html {
-  box-sizing: border-box;
-}
-
-*,
-*::after,
-*::before {
-  box-sizing: inherit;
 }
 
 .main {
